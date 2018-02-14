@@ -1,0 +1,230 @@
+html{
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  height: auto;
+  /* background-color: #DCE184; */
+
+
+}
+body{
+  width: 80%;
+  background-color: white;
+  justify-content: center;
+  margin: 0 auto;
+  border-left: 5px solid #676B15;
+  border-right: 5px solid #676B15;
+  cursor: copy;
+}
+.bannercontainer{
+  background-color: #676B15;
+  align-items: center;
+}
+.bannerdiv{
+  /* color: #710241; */
+  color:  #676B15;
+  height: 80px;
+  font-size: 50px;
+  font-weight: bolder;
+  border-bottom: 10px solid #DCE872;
+  background-color: #F1C96D;
+  display: flex;
+  justify-content: center;
+}
+.underbanner{
+  background-color: #676B15;
+  color: #F1C96D;
+  font-size: 20px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+padding-top: 10px;
+}
+
+.underbanner h2:hover {
+  font-style: oblique;
+}
+.button {
+    background-color: #DCE872;
+    border: none;
+        padding: 15px 32px;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button a{  text-decoration: none;
+font-weight: bold;
+color: #676B15;
+}
+.button:hover{
+  background-color: #676B15;
+}
+.button a:hover{
+  background-color: #676B15;
+color:#DCE872;
+}
+.menu{
+  width: 100%;
+  display: flex;
+justify-content: center;
+}
+/* .button a:hover{
+  color: darkgrey;
+} */
+.menu > .button2{
+  background-color:  #F1C96D;
+}
+.menu > .button4{
+  background-color: #F1C96D;
+}
+.sidebar{
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 15%;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+.topic{
+  text-decoration: none;
+  color: darkgreen;
+  font-size: 35px;
+  font-weight: bolder;
+}
+.topic a{
+  text-decoration: none;
+  width: 8%;
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #F1C96D;
+}
+.topic a:hover{
+  color: darkgrey;
+  font-size: 30px;
+}
+.topic > a:nth-child(4){
+  background-color: #DCE872;
+}
+.topic > a:nth-child(8){
+  background-color: #DCE872;
+}
+.gridcontainer{
+     display:grid;
+     grid-template-columns:repeat(3, 1fr);
+     grid-gap:1.3em;
+     grid-auto-rows: minmax(100px, auto);
+   }
+   .gridcontainer a{
+     text-decoration: none;
+     font-weight: bold;
+     color: black;
+     font-size: 18px;
+   }
+   .gridcontainer > div{
+     border-radius: 25px;
+     background:#DCE872;
+     padding:1em;
+   }
+   .gridcontainer > div:nth-child(odd){
+     background:#F1C96D;
+     animation: mymove 2s infinite;
+     -webkit-animation: mymove 2s infinite; /* Chrome, Safari, Opera */
+
+}
+/* using the keyframe css animation to change the color background in gridcontainer */
+@keyframes mymove {
+ from {background-color: #DCE872}
+ to {background-color: #F1C96D;}
+}
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+/* ------------------------------------------ using transition below */
+.transitioncontainer{
+  width: 0 auto;
+  height: 0 auto;
+  margin-top: 5%;
+  margin-left: 20%;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.transitioncontainer a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#lefttransition{
+width: 50%;
+display: block;
+}
+.trans1 {
+  /* margin-left: 15%;
+  margin-top: 5%;*/
+  width: 250px;
+    /* height: 300px; */
+    /* display: block; */
+    background-color: #DCE872;
+    border: 2px solid #F1C96D;
+    border-radius: 25px;
+      text-align: center;
+    webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+
+}
+.trans1 {
+  transition-timing-function: ease-out;
+}
+.trans1:hover {
+    width: 400px;
+}
+.trans1{
+ height: 300px;
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(20deg); /* Standard syntax */
+}
+.trans2 {
+    width: 300px;
+    background-color: #DCE872;
+    border: 2px solid #F1C96D;
+    border-radius: 25px;
+      text-align: center;
+    webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+
+}
+.trans2 {
+  transition-timing-function: ease-out;
+}
+.trans2:hover {
+    width: 600px;
+}
+.trans2{
+ height: 300px;
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari */
+    transform: skewX(-20deg); /* Standard syntax */
+}
+#righttransition{
+  display: block;
+  width: 50%;
+}
+   /* --------------------transition ends here------------- */
+   footer {
+
+     /* position: absolute; */
+     right: 0;
+     bottom: 0;
+     left: 0;
+     text-align: center;
+     background-color: #676B15;
+    border-color: #DCE872;
+        padding: 15px 0 15px;
+        /* border: 2px solid purple; */
+        background-attachment: fixed;
+   }
+   footer a {
+   .seperator {
+       color: solid black;
+   }
